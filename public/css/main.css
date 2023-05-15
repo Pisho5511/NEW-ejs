@@ -230,8 +230,8 @@ section{
     flex: 1 1 42rem;
 }
 
-.video-container video{
-    border-radius: 1rem;
+.video-container img{
+    border-radius: 2rem;
     width: 100%;
 }
 
