@@ -9,7 +9,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all 0.2s linear;
+    
 }
 
 :root{
@@ -93,6 +93,14 @@ i{
     border-radius: 5rem;
     cursor: pointer;
     background: none;
+    transition: all 0.2s ease;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
 }
 
 .btn:hover{
@@ -422,7 +430,7 @@ section{
         font-size: 55%;
     }
 
-    .header{
+    .navbar{
         padding: 1.5rem;
     }
 
@@ -438,18 +446,20 @@ section{
         display: inline-block;
     }
 
-    .navbar{
+    .navlist{
         position: absolute;
         top: 99%; left: 0; right: 0;
         background: #222;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all .2s ease;
     }
     .active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
     }
 
 
-    .navbar a{
+    .navlist a{
         margin: 2rem;
         font-size: 2rem;
         display: block;
